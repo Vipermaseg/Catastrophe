@@ -1,0 +1,200 @@
+{
+  "participants" : [
+    {
+      "class" : "Drone",
+      "id" : "drone0",
+      "broken" : false,
+      "position" : "r0",
+      "deathCounter" : 50
+    },
+    {
+      "class" : "Cleaner",
+      "cargo" : null,
+      "deathCounter" : 50,
+      "id" : "cleaner0",
+      "position" : "r0",
+      "broken" : false
+    },
+    {
+      "class" : "Rubble",
+      "assessed" : false,
+      "id" : "rubble0",
+      "position" : "r4",
+      "radioactive" : true
+    },
+    {
+      "class" : "Rubble",
+      "assessed" : false,
+      "position" : "r3",
+      "radioactive" : true,
+      "id" : "rubble1"
+    },
+    {
+      "class" : "Rubble",
+      "assessed" : false,
+      "position" : "r5",
+      "radioactive" : false,
+      "id" : "rubble2"
+    },
+     {
+      "class" : "Rubble",
+      "assessed" : false,
+      "position" : "r6",
+      "radioactive" : true,
+      "id" : "rubble3"
+    },
+     {
+      "class" : "Rubble",
+      "assessed" : false,
+      "position" : "r7",
+      "radioactive" : true,
+      "id" : "rubble4"
+    }
+    
+  ],
+  "waypoints" : [
+    {
+      "id" : "r0",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r4",
+        "r1"
+      ],
+      "connectedWaypointsByLand" : [
+        "r1"
+      ]
+    },
+    {
+      "id" : "r1",
+      "dump" : true,
+      "connectedWaypointsByFlight" : [
+        "r0"
+      ],
+      "connectedWaypointsByLand" : [
+        "r0",
+        "r2"
+      ]
+    },
+    {
+      "id" : "r2",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r3"
+      ],
+      "connectedWaypointsByLand" : [
+        "r1",
+        "r3",
+        "r4"
+      ]
+    },
+    {
+      "id" : "r3",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r2",
+        "r4"
+      ],
+      "connectedWaypointsByLand" : [
+        "r2"
+      ]
+    },
+    {
+      "id" : "r4",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r0",
+        "r3"
+      ],
+      "connectedWaypointsByLand" : [
+        "r2"
+      ]
+    },
+      {
+      "id" : "r5",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r3"
+      ],
+      "connectedWaypointsByLand" : [
+        "r3"
+      ]
+    },
+      {
+      "id" : "r6",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r5"
+      ],
+      "connectedWaypointsByLand" : [
+        "r5"
+      ]
+    },
+      {
+      "id" : "r7",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+        "r6"
+        
+      ],
+      "connectedWaypointsByLand" : [
+        "r8"
+      ]
+    },
+      {
+      "id" : "r8",
+      "dump" : false,
+      "connectedWaypointsByFlight" : [
+       
+      ],
+      "connectedWaypointsByLand" : [
+        "r5",
+        "r7"
+      ]
+    }
+  ],
+  "finalState" : [
+    {
+      "class" : "Drone",
+      "position" : "r0",
+      "broken" : false,
+      "id" : "drone0",
+      "deathCounter" : 50
+    },
+    {
+      "class" : "Cleaner",
+      "broken" : false,
+      "position" : "r0",
+      "id" : "cleaner0",
+      "deathCounter" : 50,
+      "cargo" : null
+    },
+    {
+      "class" : "Rubble",
+      "assessed" : false,
+      "id" : "rubble0",
+      "radioactive" : false,
+      "position" : "r1"
+    },
+    {
+      "class" : "Rubble",
+      "assessed" : false,
+      "id" : "rubble1",
+      "position" : "r1",
+      "radioactive" : false
+    },
+     {
+      "class" : "Rubble",
+      "assessed" : false,
+      "id" : "rubble3",
+      "radioactive" : false,
+      "position" : "r1"
+    },
+     {
+      "class" : "Rubble",
+      "assessed" : false,
+      "id" : "rubble4",
+      "radioactive" : false,
+      "position" : "r1"
+    }
+  ]
+}
